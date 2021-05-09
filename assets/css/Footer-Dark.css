@@ -77,7 +77,8 @@
 }
 
 .footer-dark .item.social > a:hover {
-  background-color: #00b4d8;
+  background-color: #ffffff;
+  color: #282d32;
   opacity: 0.9;
 }
 
