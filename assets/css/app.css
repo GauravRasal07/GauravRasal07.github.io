@@ -113,6 +113,20 @@ li {
   margin-right: 10%;
 }
 
+.btn-pf {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin-right: 5%;
+}
+
+.btn-rm {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 7%;
+}
+
 @media (max-width: 500px) {
   .img-fluid {
     height: 82px;
