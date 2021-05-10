@@ -215,6 +215,7 @@
             </form>
         </section>
     </section>
+    <a id="button"></a>
     <footer class="footer-dark">
         <div class="container">
             <div class="row">
@@ -232,6 +233,22 @@
     <script src="assets/js/smart-forms.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
     <script src="assets/js/stylish-portfolio.js"></script>
+    <script>
+        var btn = $('#button');
+
+        $(window).scroll(function() {
+        if ($(window).scrollTop() > 300) {
+            btn.addClass('show');
+        } else {
+            btn.removeClass('show');
+        }
+        });
+
+        btn.on('click', function(e) {
+            e.preventDefault();
+            $('html, body').animate({scrollTop:0}, '200');
+        });
+    </script>
 </body>
 
 </html>
