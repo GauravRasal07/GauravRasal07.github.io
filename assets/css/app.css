@@ -16,11 +16,6 @@ body {
   margin-top: 5rem;
 }
 
-.form-control.is-invalid:focus, .was-validated .form-control:invalid:focus {
-  border-color: #d5dadf;
-  box-shadow: 0 0 0 .2rem rgba(220,53,69,.25);
-}
-
 .caption-content {
   color: black;
 }
