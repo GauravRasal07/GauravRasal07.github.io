@@ -1,6 +1,7 @@
 .contact-clean {
   background: #f1f7fc;
   padding: 80px 0;
+  margin-bottom: 100px;
 }
 
 @media (max-width:767px) {
@@ -14,7 +15,7 @@
   width: 90%;
   margin: 0 auto;
   background-color: #ffffff;
-  padding: 40px;
+  padding: 60px 40px;
   border-radius: 4px;
   color: #505e6c;
   box-shadow: 2px 2px 24px rgba(0,0,0,0.3);
@@ -32,6 +33,12 @@
   font-size: 28px;
   margin-bottom: 36px;
   color: inherit;
+}
+
+.contact-clean h2 span {
+  background-color: #505e6c5e;
+  padding: 10px 15px;
+  border-radius: 3px;
 }
 
 .contact-clean .form-group:last-child {
