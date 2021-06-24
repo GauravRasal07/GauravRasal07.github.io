@@ -1,12 +1,12 @@
 .contact-clean {
-  background: #f1f7fc;
-  padding: 80px 0;
-  margin-bottom: 100px;
+  background: #1d819f13;
+  padding: 50px;
+  padding-bottom: 0;
 }
 
-@media (max-width:767px) {
+@media (max-width:500px) {
   .contact-clean {
-    padding: 20px 0;
+    padding: 30px 0px;
   }
 }
 
@@ -14,11 +14,11 @@
   max-width: 480px;
   width: 90%;
   margin: 0 auto;
-  background-color: #ffffff;
-  padding: 60px 40px;
+  /* background-color: #ffffff; */
+  padding: 80px 0 60px 0;
   border-radius: 4px;
   color: #505e6c;
-  box-shadow: 2px 2px 24px rgba(0,0,0,0.3);
+  /* box-shadow: 2px 2px 24px rgba(0,0,0,0.3); */
 }
 
 @media (max-width:767px) {
@@ -29,16 +29,15 @@
 
 .contact-clean h2 {
   margin-top: 5px;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 28px;
   margin-bottom: 36px;
   color: inherit;
 }
 
 .contact-clean h2 span {
-  background-color: #505e6c5e;
+  border-bottom: 2px solid grey;
   padding: 10px 15px;
-  border-radius: 3px;
 }
 
 .contact-clean .form-group:last-child {
@@ -55,8 +54,9 @@
   height: 42px;
 }
 
-.contact-clean form .form-control:focus {
-  border: 1px solid #b2b2b2;
+.contact-clean form .form-control {
+  border: none;
+  border-bottom: 2px solid #1d809f;
 }
 
 .contact-clean form textarea.form-control {
@@ -75,10 +75,11 @@
   opacity: 0.9;
   text-transform: uppercase;
   font-weight: bold;
-  font-size: 13px;
+  font-size: 16px;
   letter-spacing: 0.4px;
   line-height: 1;
   outline: none !important;
+  float: right;
 }
 
 .contact-clean form .btn:hover {
@@ -90,8 +91,17 @@
 }
 
 .contact-clean form .btn-primary {
-  background-color: #055ada !important;
+  background-color: #1d809f !important;
   margin-top: 15px;
   color: #fff;
 }
+
+.contact-side-img {
+  padding: 10%;
+  width: 90%;
+  height: 70%;
+  margin-top: 3%;
+  margin-left: 10%;
+}
+
 

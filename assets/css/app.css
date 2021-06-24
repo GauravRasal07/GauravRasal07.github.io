@@ -1,6 +1,7 @@
 body {
   font-family: 'Playfair Display', serif;
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 .masthead {
@@ -21,9 +22,9 @@ body {
   height:50px;
 }
 
-.footer-dark {
-  margin-top: 5rem;
-}
+/* .footer-dark {
+  margin-top: 3rem;
+} */
 
 .caption-content {
   color: black;
@@ -79,10 +80,6 @@ span {
 
 .btn-xl {
   font-size: 1.2rem;
-}
-
-.map {
-  height: 70%;
 }
 
 #portfolio {
@@ -176,6 +173,10 @@ li {
   visibility: visible;
 }
 
+.other_skills {
+  text-align: center;
+}
+
 ::-webkit-scrollbar {
   width: 8px;
 }
@@ -210,9 +211,9 @@ li {
     margin-left: 0;
   }
 
-  .footer-dark {
-    margin-top: 0px;
-  }
+  /* .footer-dark {
+    margin-top: 10rem;
+  } */
 
   #sidebar-wrapper.active {
     width: 170px;
