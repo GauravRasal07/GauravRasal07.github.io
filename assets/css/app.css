@@ -22,10 +22,6 @@ body {
   height:50px;
 }
 
-/* .footer-dark {
-  margin-top: 3rem;
-} */
-
 .caption-content {
   color: black;
 }
@@ -210,10 +206,6 @@ li {
   .skill-list {
     margin-left: 0;
   }
-
-  /* .footer-dark {
-    margin-top: 10rem;
-  } */
 
   #sidebar-wrapper.active {
     width: 170px;
