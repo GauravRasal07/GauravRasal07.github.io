@@ -1,6 +1,6 @@
 .contact-clean {
   background: #1d819f13;
-  padding: 50px;
+  padding: 125px 50px;
   padding-bottom: 0;
 }
 
@@ -25,17 +25,12 @@
   }
 }
 
-.contact-clean h2 {
+.contact-clean h3 {
   margin-top: 5px;
   font-weight: 700;
-  font-size: 28px;
+  font-size: 34px;
   margin-bottom: 36px;
   color: inherit;
-}
-
-.contact-clean h2 span {
-  border-bottom: 2px solid grey;
-  padding: 10px 15px;
 }
 
 .contact-clean .form-group:last-child {

@@ -5,6 +5,7 @@ body {
 }
 
 .masthead {
+  background-image: url('../img/bg-1.jpg');
   color: rgba(255,255,255,0.7);
 }
 
@@ -20,6 +21,28 @@ body {
 #side-img {
   width:50px;
   height:50px;
+}
+
+#about {
+  background: url("../img/about-bg.jpg") center top no-repeat fixed;
+  background-size: cover;
+  position: relative;
+}
+
+#about::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.63);
+  z-index: 9;
+}
+
+#about .container {
+  position: relative;
+  z-index: 10;
 }
 
 .caption-content {
