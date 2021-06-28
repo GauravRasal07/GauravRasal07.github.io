@@ -9,6 +9,10 @@ body {
   color: rgba(255,255,255,0.7);
 }
 
+.menu-toggle:hover {
+  background-color: #0b485a48;
+}
+
 .b-left {
   border-left: 5px solid #1d809f;
   border-radius: 5px;
@@ -119,6 +123,10 @@ span {
   margin-bottom: 1rem !important;
 }
 
+#portfolio {
+  padding-top: 2.5rem;
+}
+
 li {
   text-align: left!important;
   font-size: 20px;
@@ -149,7 +157,7 @@ li {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  margin-top: 7%;
+  margin-top: 3%;
 }
 
 #button {
@@ -242,11 +250,22 @@ li {
     bottom: 10px;
     right: 5px;
   }
+
+  .btn-rm {
+    margin-top: 12%;
+  }
 }
 
 @media (min-width: 700px) {
   #sidebar-wrapper {
     background: #1d819f70;
+  }
+}
+
+@media (min-width: 770px){
+  .car-img {
+    height: 70vh;
+    width: 100%;
   }
 }
 
