@@ -22,10 +22,14 @@ body {
   margin-bottom: 20px;
 }
 
-#side-img {
+.content-section {
+  padding-top: 3rem;
+}
+
+/* #side-img {
   width:50px;
   height:50px;
-}
+} */
 
 #about {
   background: url("../img/about-bg.jpg") center top no-repeat fixed;
@@ -47,6 +51,11 @@ body {
 #about .container {
   position: relative;
   z-index: 10;
+}
+
+.dwnld-cv {
+  display: flex;
+  justify-content: space-between;
 }
 
 .caption-content {
@@ -107,6 +116,7 @@ span {
 
 #portfolio {
   background-color: rgb(225,175,37);
+  padding-top: 2.5rem;
 }
 
 .progress-bar {
@@ -121,10 +131,6 @@ span {
   text-align: center;
   font-size: 2rem;
   margin-bottom: 1rem !important;
-}
-
-#portfolio {
-  padding-top: 2.5rem;
 }
 
 li {
@@ -204,6 +210,12 @@ li {
   text-align: center;
 }
 
+.skill-logo {
+  height: 24px; 
+  width: 24px;
+  margin-bottom: 5px;
+}
+
 ::-webkit-scrollbar {
   width: 8px;
 }
@@ -229,9 +241,17 @@ li {
     width: 82px;
   }
 
+  .menu-toggle {
+    right: 30px;
+  }
+
   #side-img {
-    width:30px;
-    height:30px;
+    height: 60px;
+    width:130px;
+  }
+
+  .b-left {
+    margin-left: 1px !important;
   }
 
   .skill-list {
@@ -242,13 +262,21 @@ li {
     width: 170px;
   }
 
+  .dwnld-cv {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .cv {
+    margin-top: 10px;
+  }
+
   .content-portfolio {
     height: 100%;
   }
 
   #button {
     bottom: 10px;
-    right: 5px;
   }
 
   .btn-rm {

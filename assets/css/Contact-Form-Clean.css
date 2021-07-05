@@ -4,12 +4,6 @@
   padding-bottom: 0;
 }
 
-@media (max-width:500px) {
-  .contact-clean {
-    padding: 30px 0px;
-  }
-}
-
 .contact-clean form {
   max-width: 480px;
   width: 90%;
@@ -17,12 +11,6 @@
   padding: 80px 0 60px 0;
   border-radius: 4px;
   color: #505e6c;
-}
-
-@media (max-width:767px) {
-  .contact-clean form {
-    padding: 30px;
-  }
 }
 
 .contact-clean h3 {
@@ -90,7 +78,7 @@
 }
 
 .contact-side-img {
-  padding: 10%;
+  padding: 70px 40px 0px 40px;
   width: 90%;
   height: 70%;
   margin-top: 3%;
@@ -98,3 +86,19 @@
 }
 
 
+
+@media (max-width:500px) {
+  .contact-clean {
+    padding: 30px 0px;
+  }
+}
+
+@media (max-width:700px) {
+  .contact-clean form {
+    padding: 0;
+  }
+
+  .contact-side-img {
+    padding: 0;
+  }
+}

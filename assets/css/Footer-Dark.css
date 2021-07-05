@@ -1,7 +1,7 @@
 .footer-dark {
   padding: 50px 0 80px 0;
   color: #f0f9ff;
-  background-color: #002f3f;
+  background-color: #001c25;
 }
 
 .footer-dark h3 {
@@ -46,11 +46,6 @@
   }
 }
 
-.footer-dark .item.text p {
-  opacity: 0.6;
-  margin-bottom: 0;
-}
-
 .footer-dark .item.social {
   text-align: center;
 }
@@ -85,7 +80,7 @@
 .footer-dark .copyright {
   text-align: center;
   padding-top: 24px;
-  opacity: 0.3;
+  opacity: 0.5;
   font-size: 13px;
   margin-bottom: 0;
 }
