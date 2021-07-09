@@ -4,6 +4,10 @@ body {
   overflow-x: hidden;
 }
 
+.btn.focus, .btn:focus {
+  box-shadow: none;
+}
+
 .masthead {
   background-image: url('../img/bg-1.jpg');
   color: rgba(255,255,255,0.7);
