@@ -1,69 +1,28 @@
-(function($) {
-  "use strict"; // Start of use strict
-
-  // Closes the sidebar menu
-  $(".menu-toggle").click(function(e) {
-    e.preventDefault();
-    $("#sidebar-wrapper").toggleClass("active");
-    $(".menu-toggle > .fa-bars, .menu-toggle > .fa-times").toggleClass("fa-bars fa-times");
-    $(this).toggleClass("active");
-  });
-
-  // Smooth scrolling using jQuery easing
-  $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function() {
-    if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
-      var target = $(this.hash);
-      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-      if (target.length) {
-        $('html, body').animate({
-          scrollTop: target.offset().top
-        }, 1000, "easeInOutExpo");
-        return false;
-      }
-    }
-  });
-
-  // Closes responsive menu when a scroll trigger link is clicked
-  $('#sidebar-wrapper .js-scroll-trigger').click(function() {
-    $("#sidebar-wrapper").removeClass("active");
-    $(".menu-toggle").removeClass("active");
-    $(".menu-toggle > .fa-bars, .menu-toggle > .fa-times").toggleClass("fa-bars fa-times");
-  });
-
-  // Scroll to top button appear
-  $(document).scroll(function() {
-    var scrollDistance = $(this).scrollTop();
-    if (scrollDistance > 100) {
-      $('#button').fadeIn();
-    } else {
-      $('#button').fadeOut();
-    }
-  });
-
-  var btn = $('#button');
-
-  $(window).scroll(function() {
-  if ($(window).scrollTop() > 300) {
-      btn.addClass('show');
+window.addEventListener("scroll", (e) => {
+  const nav = document.querySelector(".navbar");
+  if (window.pageYOffset > 100) {
+    nav.classList.add("add-shadow");
   } else {
-      btn.removeClass('show');
+    nav.classList.remove("add-shadow");
   }
-  });
+})
 
-  btn.on('click', function(e) {
-      e.preventDefault();
-      $('html, body').animate({scrollTop:0}, '200');
-  });
+var addClassOnScroll = function () {
+  var windowTop = $(window).scrollTop();
+  $("section[id]").each(function (index, elem) {
+    var offsetTop = $(elem).offset().top;
+    var outerHeight = $(this).outerHeight(true);
 
-  function aos_init() {
-    AOS.init({
-        duration: 1000,
-        easing: "ease-in-out-back",
-        once: false
-    });
-  }
-  $(window).on('load', function () {
-    aos_init();
+    if (windowTop > offsetTop - 50 && windowTop < offsetTop + outerHeight) {
+      var elemId = $(elem).attr("id");
+      $("nav ul li a.active").removeClass("active");
+      $("nav ul li a[href='#" + elemId + "']").addClass("active");
+    }
   });
+};
 
-})(jQuery);
+$(function () {
+  $(window).on("scroll", function () {
+    addClassOnScroll();
+  });
+});
