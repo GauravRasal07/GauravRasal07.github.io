@@ -17,7 +17,7 @@ body {
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #666;
+  background: rgb(56, 56, 56);
 }
 
 ::-webkit-scrollbar-track {
@@ -26,10 +26,6 @@ body {
 
 ::-webkit-scrollbar-corner {
   background: #999;
-}
-
-::-webkit-resizer {
-  background: #fff;
 }
 
 section {
