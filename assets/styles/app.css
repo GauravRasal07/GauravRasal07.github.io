@@ -415,29 +415,40 @@ p {
   height: 20px;
 }
 
-.back-to-top {
-  position: fixed;
-  display: none;
-  background: #6900cc;
+#button {
+  display: inline-block;
+  background-color: #6900cc;
+  color: #fff;
   width: 44px;
   height: 44px;
   text-align: center;
-  line-height: 1;
-  font-size: 16px;
   border-radius: 50%;
-  right: 15px;
+  line-height: 1;
+  position: fixed;
   bottom: 15px;
-  transition: background 0.5s;
-  z-index: 11;
+  right: 15px;
+  transition: background-color .3s, 
+    opacity .5s, visibility .5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
 }
 
-.back-to-top i {
+#button i {
   padding-top: 12px;
   color: #fff;
 }
 
-@media (max-width: 768px) {
-  .back-to-top {
-    bottom: 15px;
-  }
+#button:hover {
+  cursor: pointer;
+  background-color: #6900cca8;
+}
+
+#button:active {
+  background-color: #6900cca8;
+}
+
+#button.show {
+  opacity: 1;
+  visibility: visible;
 }

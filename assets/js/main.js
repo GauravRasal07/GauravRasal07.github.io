@@ -27,20 +27,26 @@ $(function () {
   });
 });
 
-$(window).scroll(function () {
-  if ($(this).scrollTop() > 100) {
-    $(".back-to-top").fadeIn("slow");
+$(document).scroll(function () {
+  var scrollDistance = $(this).scrollTop();
+  if (scrollDistance > 100) {
+    $("#button").fadeIn();
   } else {
-    $(".back-to-top").fadeOut("slow");
+    $("#button").fadeOut();
   }
 });
-$(".back-to-top").click(function () {
-  $("html, body").animate(
-    {
-      scrollTop: 0,
-    },
-    1500,
-    "easeInOutExpo"
-  );
-  return false;
+
+var btn = $("#button");
+
+$(window).scroll(function () {
+  if ($(window).scrollTop() > 300) {
+    btn.addClass("show");
+  } else {
+    btn.removeClass("show");
+  }
+});
+
+btn.on("click", function (e) {
+  e.preventDefault();
+  $("html, body").animate({ scrollTop: 0 }, "200");
 });
