@@ -40,7 +40,6 @@ section {
 
 .navbar-brand a {
   text-decoration: none;
-  color: rgb(255, 0, 106);
   color: rgb(157, 52, 255);
   padding-left: 10px;
 }
@@ -57,7 +56,6 @@ section {
 }
 
 .navbar-dark .navbar-nav .nav-link {
-  color: rgb(255, 0, 106);
   color: rgba(226, 226, 226, 0.719);
   cursor: pointer;
   font-size: 18px;
@@ -65,13 +63,11 @@ section {
 
 .navbar-dark .navbar-nav .active {
   border-bottom: 3px solid rgb(226, 226, 226);
-  /* border-top: 3px solid rgb(226, 226, 226); */
   background: #4a008f4d;
 }
 
 .add-shadow {
   background: rgb(105, 0, 204) !important;
-  /* background: -o-linear-gradient(rgb(157, 52, 255),rgb(255, 0, 106)); */
   box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 2px 2px;
 }
 
@@ -206,10 +202,6 @@ h3 span {
   background-color: #505e6c2d;
 }
 
-p {
-  font-weight: 400 !important;
-}
-
 .lead {
   font-size: 1.1rem;
 }
@@ -270,7 +262,6 @@ p {
 .contact-clean form .form-control {
   border: none;
   border-bottom: 2px solid #6900cc;
-  /* color: #6900CC; */
 }
 
 .contact-clean form textarea.form-control {
@@ -311,7 +302,6 @@ p {
 }
 
 .contact-side-img {
-  /* padding: 70px 40px 0px 40px; */
   width: 50%;
   height: auto;
   margin-top: 10%;
