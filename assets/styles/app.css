@@ -57,7 +57,7 @@ section {
 }
 
 .navbar-dark .navbar-nav .nav-link {
-  color: rgba(255, 255, 255, 0.8);
+  color: rgba(255, 255, 255, 0.85);
   cursor: pointer;
   font-size: 18px;
   font-weight: 600;
@@ -149,9 +149,13 @@ h1 {
 }
 
 @media screen and (max-width: 480px) {
+  .navbar-toggler {
+    font-size: 1rem;
+  }
+
   section {
     height: auto;
-    padding-top: 8vh;
+    padding-top: 11vh;
   }
 
   #home {
@@ -174,6 +178,10 @@ h1 {
 
   .body-content {
     margin-top: 5rem;
+  }
+
+  #contact h3 {
+    margin-bottom: 2rem;
   }
 }
 
@@ -233,6 +241,7 @@ h2, h3, h5 {
 .skill-logo {
   height: 24px;
   width: 24px;
+  font-size: 24px;
   margin-bottom: 5px;
 }
 
@@ -435,7 +444,7 @@ h2, h3, h5 {
   font-size: 12px;
 }
 
-#button {
+#button, #btn-mode {
   display: inline-block;
   background-color: #6900cc;
   color: #fff;
@@ -468,9 +477,17 @@ h2, h3, h5 {
   background-color: #6900cca8;
 }
 
-#button.show {
+#button.show, #btn-mode.show {
   opacity: 1;
   visibility: visible;
+}
+
+#btn-mode {
+  background: #fff;
+  color: #000;
+  cursor: pointer;
+  bottom: 70px;
+  font-size: 44px;
 }
 
 /* Contact Section
@@ -572,4 +589,78 @@ h2, h3, h5 {
   100% {
     transform: rotate(360deg);
   }
+}
+
+.flip {
+  animation-delay: 0.5s;
+  animation-duration: 0.75s;
+  transform: rotate(-180deg);
+}
+
+/* Dark Mode */
+.dark-mode {
+  caret-color: #eee;
+}
+
+.dark-mode, .dark-mode #skills, .dark-mode #contact, .dark-mode .section-bg {
+  background-color: #000;
+  color: #f7f7f7;
+}
+
+.dark-mode h1,
+.dark-mode h2,
+.dark-mode p,
+.dark-mode li,
+.dark-mode h3,
+.dark-mode .card-body a i {
+  color: #d6d6d6;
+}
+
+.dark-mode h3 span {
+  border-color: #f7f7f7;
+}
+
+.dark-mode .b-left {
+  border-color: rgb(116, 116, 116);
+}
+
+.dark-mode .b-left, .dark-mode .card-body {
+  background-color: rgb(63, 63, 63);
+}
+
+.dark-mode .card {
+  border-color: #000;
+}
+
+.dark-mode .card-body a i {
+  box-shadow: rgb(255 255 255 / 40%) 0px 0px 0px 1px;
+}
+
+.dark-mode .card-body a i:hover {
+  background-color: rgba(238, 238, 238, 0.781);
+  color: #000;
+}
+
+.dark-mode #contact-div .contact-info i{
+  color: #6900cc;
+}
+
+.dark-mode .card-title {
+  color: #8400ff;
+}
+
+.dark-mode .card {
+  box-shadow: rgba(255, 255, 255, 0.45) 2px 5px 15px;
+}
+
+.dark-mode .card:hover {
+  box-shadow: 8px 8px 16px 0 rgba(256,256,256,0.35);
+}
+
+.dark-mode #contact-div .contact-info address, .dark-mode  #contact-div .contact-info a {
+  color: #f7f7f7c9;
+} 
+
+#contact-div .contact-phone {
+  border-color: rgba(153, 153, 153, 0.74);
 }

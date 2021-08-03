@@ -31,18 +31,35 @@ $(document).scroll(function () {
   var scrollDistance = $(this).scrollTop();
   if (scrollDistance > 100) {
     $("#button").fadeIn();
+    $("#btn-mode").fadeIn();
   } else {
     $("#button").fadeOut();
+    $("#btn-mode").fadeOut();
   }
 });
 
 var btn = $("#button");
+var btn1 = $("#btn-mode");
 
 $(window).scroll(function () {
   if ($(window).scrollTop() > 300) {
     btn.addClass("show");
+    btn1.addClass("show");
   } else {
     btn.removeClass("show");
+    btn1.removeClass("show");
+  }
+});
+
+btn1.click(function () {
+  if ($("body").hasClass("dark-mode")) {
+    $("body").removeClass("dark-mode");
+    $(".cpp").attr("src", "assets/images/cpp.svg");
+    $(".rt").removeClass("flip");
+  } else {
+    $("body").addClass("dark-mode");
+    $(".cpp").attr("src", "assets/images/cpp-2.svg");
+    $(".rt").addClass("flip");
   }
 });
 
