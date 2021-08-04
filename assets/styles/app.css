@@ -17,12 +17,20 @@ body {
   border-radius: 8px;
 }
 
+.dark-mode::-webkit-scrollbar-thumb {
+  background: rgba(88, 87, 87, 0.644);
+}
+
 ::-webkit-scrollbar-thumb:hover {
   background: rgb(56, 56, 56);
 }
 
 ::-webkit-scrollbar-track {
   background: rgba(48, 38, 53, 0.466);
+}
+
+.dark-mode::-webkit-scrollbar-track {
+  background: rgba(71, 71, 71, 0.466);
 }
 
 ::-webkit-scrollbar-corner {
@@ -204,6 +212,10 @@ h3 span {
 .card img {
   border-radius: 10px 10px 0 0;
   height: 250px;
+}
+
+.card-body {
+  border-radius: 0 0 10px 10px;
 }
 
 .card:hover {
@@ -603,7 +615,7 @@ h2, h3, h5 {
 }
 
 .dark-mode, .dark-mode #skills, .dark-mode #contact, .dark-mode .section-bg {
-  background-color: #000;
+  background-color: rgba(27,31,36,1);
   color: #f7f7f7;
 }
 
@@ -650,11 +662,11 @@ h2, h3, h5 {
 }
 
 .dark-mode .card {
-  box-shadow: rgba(255, 255, 255, 0.45) 2px 5px 15px;
+  box-shadow: rgba(255, 255, 255, 0.15) 2px 5px 15px;
 }
 
 .dark-mode .card:hover {
-  box-shadow: 8px 8px 16px 0 rgba(256,256,256,0.35);
+  box-shadow: 8px 8px 16px 0 rgba(256,256,256,0.15);
 }
 
 .dark-mode #contact-div .contact-info address, .dark-mode  #contact-div .contact-info a {
