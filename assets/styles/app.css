@@ -68,7 +68,6 @@ section {
   color: rgba(255, 255, 255, 0.85);
   cursor: pointer;
   font-size: 18px;
-  font-weight: 600;
 }
 
 .navbar-dark .navbar-nav .nav-link:hover {
@@ -89,6 +88,7 @@ section {
 .add-shadow .navbar-nav .nav-link,
 .add-shadow .navbar-brand a {
   color: #fff !important;
+  font-weight: 400;
 }
 
 .add-shadow .container-fluid {
