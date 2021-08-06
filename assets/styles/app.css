@@ -476,17 +476,18 @@ h2, h3, h5 {
 }
 
 #button i {
-  padding-top: 12px;
+  padding-top: 10px;
   color: #fff;
+  font-size: 22px;
 }
 
 #button:hover {
   cursor: pointer;
-  background-color: #6900cca8;
+  background-color: #52009e;
 }
 
 #button:active {
-  background-color: #6900cca8;
+  background-color: #52009e;
 }
 
 #button.show, #btn-mode.show {
@@ -614,9 +615,13 @@ h2, h3, h5 {
   caret-color: #eee;
 }
 
-.dark-mode, .dark-mode #skills, .dark-mode #contact, .dark-mode .section-bg {
+.dark-mode {
   background-color: rgba(27,31,36,1);
   color: #f7f7f7;
+}
+
+.dark-mode #skills, .dark-mode #contact, .dark-mode .section-bg {
+  background-color: rgb(32, 36, 41);
 }
 
 .dark-mode h1,
