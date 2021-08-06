@@ -550,6 +550,7 @@ h2, h3, h5 {
 
 #contact-div .contact-address, #contact-div .contact-phone, #contact-div .contact-email {
   margin-bottom: 20px;
+  font-weight: 400;
 }
 
 
