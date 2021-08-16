@@ -6,6 +6,17 @@ body {
   font-weight: 600;
   overflow-y: scroll;
   overflow-x: hidden;
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none;
+}
+
+*::selection{
+  background: #6900cc;
+  color: #fff;
 }
 
 ::-webkit-scrollbar {
@@ -83,6 +94,7 @@ section {
 .add-shadow {
   background: rgb(105, 0, 204) !important;
   box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 2px 2px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 .add-shadow .navbar-nav .nav-link,
@@ -146,6 +158,8 @@ p {
 h1 {
   color: rgb(207, 207, 207);
   font-size: 62px;
+  z-index: 99;
+  text-shadow: rgba(256, 256, 256, 0.24) 0px 3px 8px;;
 }
 
 #home {
@@ -204,7 +218,9 @@ h3 span {
 
 .card {
   margin: 1rem;
-  box-shadow: 2px 2px 4px 0 rgba(0,0,0,0.2);
+  z-index: 99;
+  /* box-shadow: 2px 2px 4px 0 rgba(0,0,0,0.2); */
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   transition: 0.3s;
   border-radius: 10px; 
 }
@@ -230,6 +246,8 @@ h3 span {
   padding-bottom: none;
   margin-bottom: 20px;
   background-color: #eeeeee;
+  border-radius: 0 10px 10px 0;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 .lead {
@@ -473,6 +491,7 @@ h2, h3, h5 {
   opacity: 0;
   visibility: hidden;
   z-index: 1000;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 #button i {
@@ -640,6 +659,7 @@ h2, h3, h5 {
 
 .dark-mode .b-left {
   border-color: rgb(116, 116, 116);
+  box-shadow: rgba(256, 256, 256, 0.24) 0px 3px 8px;
 }
 
 .dark-mode .b-left, .dark-mode .card-body {
@@ -669,6 +689,7 @@ h2, h3, h5 {
 
 .dark-mode .card {
   box-shadow: rgba(255, 255, 255, 0.15) 2px 5px 15px;
+  box-shadow: rgba(256, 256, 256, 0.24) 0px 3px 8px;
 }
 
 .dark-mode .card:hover {
@@ -678,6 +699,14 @@ h2, h3, h5 {
 .dark-mode #contact-div .contact-info address, .dark-mode  #contact-div .contact-info a {
   color: #f7f7f7c9;
 } 
+
+.dark-mode #button, .dark-mode #btn-mode {
+  box-shadow: rgba(256, 256, 256, 0.24) 0px 3px 8px;
+}
+
+.dark-mode #button i {
+  color: rgb(32, 36, 41);
+}
 
 #contact-div .contact-phone {
   border-color: rgba(153, 153, 153, 0.74);
