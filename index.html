@@ -31,6 +31,8 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="./assets/styles/app.css" />
+    <link href="assets/aos/aos.css" rel="stylesheet" />  
+    <script src="assets/aos/aos.js"></script>
   </head>
   <body>
     <section id="home">
@@ -42,7 +44,7 @@
           fixed-top
         "
       >
-        <div class="container-fluid">
+        <div class="container-fluid" data-aos="fade-down">
           <button
             class="navbar-toggler flex-grow-sm-1 flex-grow-0 me-2"
             type="button"
@@ -89,14 +91,14 @@
 
       <div class="container body-content">
         <div class="row">
-          <div class="col-md-4 my-img">
+          <div class="col-md-4 my-img" data-aos="fade-down">
             <img
               class="img-fluid"
               src="./assets/images/hello.svg"
               alt="mypicture"
             />
           </div>
-          <div class="col-md-8 head-content">
+          <div class="col-md-8 head-content" data-aos="fade-down">
             <h1>
               Hi, <br />I'm
               <span style="color: rgb(157, 52, 255); font-weight: 600"
@@ -143,7 +145,7 @@
     <section id="about" data-anchor="about">
       <div class="container">
         <div class="row">
-          <div class="col-lg-10 mx-auto b-left">
+          <div class="col-lg-10 mx-auto b-left" data-aos="fade-down">
             <h2>About Me</h2>
             <p class="lead mb-5" style="margin-bottom: 0 !important">
               A Student pursuing graduation(currently in TE) in Computer Science
@@ -154,7 +156,7 @@
               listening to songs pleases my soul.
             </p>
           </div>
-          <div class="col-md-4 mx-auto">
+          <div class="col-md-4 mx-auto" data-aos="fade-down">
             <div>
               <h2>Personal Information</h2>
               <ul>
@@ -175,7 +177,7 @@
             </div>
           </div>
           <div class="col-md-4 mx-auto">
-            <div>
+            <div data-aos="fade-down">
               <h2>Experience</h2>
               <ul>
                 <li>
@@ -191,7 +193,7 @@
             </div>
           </div>
         </div>
-        <div class="dwnld-cv col-md-11">
+        <div class="dwnld-cv col-md-11" data-aos="fade-down">
           <a
             class="btn btn-site btn-xl js-scroll-trigger hvr-float-shadow cv"
             role="button"
@@ -210,16 +212,15 @@
     >
       <div class="container">
         <div class="content-section-heading">
-          <h3 class="mb-5 no-b">
+          <h3 class="mb-5 no-b" data-aos="fade-down">
             <span>LANGUAGES AND FRAMEWORKS</span>
           </h3>
           <div class="row">
             <div class="col-md-6">
               <ul class="skill-list">
-                <div>
+                <div class="skill-item" data-aos="fade-down">
                   <li>
-                    <span
-                      ><i class="fab fa-python skill-logo"></i></span>
+                    <span><i class="fab fa-python skill-logo"></i></span>
                     Python
                   </li>
                   <div class="progress">
@@ -234,14 +235,15 @@
                   </div>
                 </div>
                 <br />
-                <div>
+                <div class="skill-item" data-aos="fade-down">
                   <li>
-                    <span
-                      ><img
+                    <span>
+                      <i class="far fa-brackets-curly skill-logo"></i>
+                      <!-- <img
                         src="assets/images/cpp.svg" style="color: white;"
                         alt="logo"
-                        class="skill-logo cpp"
-                    /></span>
+                        class="skill-logo cpp"/>-->
+                    </span>
                     C++
                   </li>
                   <div class="progress">
@@ -256,10 +258,9 @@
                   </div>
                 </div>
                 <br />
-                <div>
+                <div class="skill-item" data-aos="fade-down">
                   <li>
-                    <span
-                      ><i class="fab fa-js-square skill-logo"></i></span>
+                    <span><i class="fab fa-js-square skill-logo"></i></span>
                     JavaScript
                   </li>
                   <div class="progress">
@@ -274,10 +275,14 @@
                   </div>
                 </div>
                 <br />
-                <div>
+                <div class="skill-item" data-aos="fade-down">
                   <li>
                     <span
-                      ><i class="fab fa-java skill-logo" style="font-size: 28px;"></i></span>
+                      ><i
+                        class="fab fa-java skill-logo"
+                        style="font-size: 28px"
+                      ></i
+                    ></span>
                     Java
                   </li>
                   <div class="progress">
@@ -291,15 +296,30 @@
                     ></div>
                   </div>
                 </div>
+                <br /><div class="skill-item" data-aos="fade-down">
+                  <li>
+                    <span><i class="fas fa-database skill-logo"></i></span
+                    >MongoDB
+                  </li>
+                  <div class="progress">
+                    <div
+                      class="progress-bar progress-bar-warning"
+                      role="progressbar"
+                      aria-valuenow="60"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                      style="width: 70%"
+                    ></div>
+                  </div>
+                </div>
                 <br />
               </ul>
             </div>
             <div class="col-md-6">
               <ul class="skill-list">
-                <div>
+                <div class="skill-item" data-aos="fade-down">
                   <li>
-                    <span
-                      ><i class="fab fa-html5 skill-logo"></i></span>
+                    <span><i class="fab fa-html5 skill-logo"></i></span>
                     HTML5
                   </li>
                   <div class="progress">
@@ -314,10 +334,9 @@
                   </div>
                 </div>
                 <br />
-                <div>
+                <div class="skill-item" data-aos="fade-down">
                   <li>
-                    <span
-                      ><i class="fab fa-css3-alt skill-logo"></i></span>
+                    <span><i class="fab fa-css3-alt skill-logo"></i></span>
                     CSS3
                   </li>
                   <div class="progress">
@@ -332,10 +351,9 @@
                   </div>
                 </div>
                 <br />
-                <div>
+                <div class="skill-item" data-aos="fade-down">
                   <li>
-                    <span
-                      ><i class="fab fa-bootstrap skill-logo"></i></span>
+                    <span><i class="fab fa-bootstrap skill-logo"></i></span>
                     Bootstrap
                   </li>
                   <div class="progress">
@@ -350,10 +368,9 @@
                   </div>
                 </div>
                 <br />
-                <div>
+                <div class="skill-item" data-aos="fade-down">
                   <li>
-                    <span
-                      ><i class="fab fa-node-js skill-logo"></i></span>
+                    <span><i class="fab fa-node-js skill-logo"></i></span>
                     NodeJs
                   </li>
                   <div class="progress">
@@ -368,10 +385,9 @@
                   </div>
                 </div>
                 <br />
-                <div>
+                <div class="skill-item" data-aos="fade-down">
                   <li>
-                    <span
-                      ><i class="fab fa-react skill-logo"></i></span>
+                    <span><i class="fab fa-react skill-logo"></i></span>
                     ReactJs
                   </li>
                   <div class="progress">
@@ -386,43 +402,36 @@
                   </div>
                 </div>
                 <br />
-                <!-- <div>
-                      <li><span><i class="fas fa-database skill-logo"></i></span>MongoDB</li>
-                      <div class="progress">
-                          <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60"
-                          aria-valuemin="0" aria-valuemax="100" style="width:70%">
-                          </div>
-                      </div>
-                  </div><br> -->
+                
               </ul>
             </div>
           </div>
-          <div class="other_skills">
+          <!-- <div class="other_skills">
             <h3 class="mb-4">
               <span>Other SKILLS</span>
             </h3>
             <div class="row">
               <div class="col-md-5"></div>
               <div class="col-md-2">
-                <ul class="skill-list">
+                <ul class="skill-list" data-aos="fade-down">
                   <li>Problem Solving</li>
                   <li>Desicion Making</li>
                 </ul>
               </div>
               <div class="col-md-5"></div>
             </div>
-          </div>
+          </div> -->
         </div>
       </div>
     </section>
     <section id="projects">
       <div class="container">
-        <div class="content-section-heading mb-5">
+        <div class="content-section-heading mb-5" data-aos="fade-down">
           <h3><span>Projects</span></h3>
         </div>
         <div class="row">
           <div class="col-md-4">
-            <div class="card">
+            <div class="card" data-aos="fade-down">
               <img
                 src="assets/images/bg-photo1.jpg"
                 class="card-img-top"
@@ -453,7 +462,7 @@
             </div>
           </div>
           <div class="col-md-4">
-            <div class="card">
+            <div class="card" data-aos="fade-down">
               <img
                 src="assets/images/bg-blog1.jpg"
                 class="card-img-top"
@@ -484,7 +493,7 @@
             </div>
           </div>
           <div class="col-md-4">
-            <div class="card">
+            <div class="card" data-aos="fade-down">
               <img
                 src="assets/images/bg-news.jpg"
                 class="card-img-top"
@@ -517,7 +526,7 @@
         </div>
         <div class="row">
           <div class="col-md-4">
-            <div class="card">
+            <div class="card" data-aos="fade-down">
               <img
                 src="assets/images/bg-todo.jpg"
                 class="card-img-top"
@@ -548,7 +557,7 @@
             </div>
           </div>
           <div class="col-md-4">
-            <div class="card">
+            <div class="card" data-aos="fade-down">
               <img
                 src="assets/images/bg-bmi.jpg"
                 class="card-img-top"
@@ -578,7 +587,7 @@
             </div>
           </div>
           <div class="col-md-4">
-            <div class="card">
+            <div class="card" data-aos="fade-down">
               <img
                 src="assets/images/bg-discord.png"
                 class="card-img-top"
@@ -607,18 +616,18 @@
     <section id="contact">
       <div class="contact-clean row">
         <div style="text-align: center; width: 100%">
-          <h3 class="text-center">
+          <h3 class="text-center" data-aos="fade-down">
             <span>Get in Touch</span>
           </h3>
         </div>
-        <div class="col-sm-6">
+        <div class="col-sm-6" data-aos="fade-down">
           <img
             class="contact-side-img"
             src="assets/images/contact.svg"
             alt="contact"
           />
         </div>
-        <div class="col-sm-6">
+        <div class="col-sm-6" data-aos="fade-down">
           <form
             data-bss-subject="Message on Profile"
             data-bss-recipient="f6579b95da4dcd4de54c091e3314408c"
@@ -660,7 +669,7 @@
         </div>
       </div>
       <div id="contact-div" class="section-bg">
-        <div class="container" data-aos="fade-up">
+        <div class="container" data-aos="fade-down">
           <div class="row contact-info">
             <div class="col-md-4">
               <div class="contact-address">
@@ -704,8 +713,8 @@
         <p>©2021 | All rights reserved</p>
       </div>
     </section>
-    <a id="button" class="scroll-to-top"><i class="fas fa-arrow-up"></i></a>
-    <a id="btn-mode"><i class="fad fa-adjust rt"></i></a>
+    <a id="button" class="scroll-to-top"><i class="fas fa-arrow-up" data-aos="fade-up"></i></a>
+    <a id="btn-mode"><i class="fad fa-adjust rt" data-aos="fade-up"></i></a>
 
     <script src="assets/js/smart-forms.min.js"></script>
     <script

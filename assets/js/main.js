@@ -115,3 +115,15 @@ btn.on("click", function (e) {
   e.preventDefault();
   $("html, body").animate({ scrollTop: 0 }, "200");
 });
+
+ // Init AOS
+  function aos_init() {
+    AOS.init({
+      duration: 1500,
+      once:true
+    });
+}
+  
+  $(window).on('load', function() {
+    aos_init();
+  });

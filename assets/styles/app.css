@@ -79,17 +79,48 @@ section {
   color: rgba(255, 255, 255, 0.85);
   cursor: pointer;
   font-size: 18px;
+  position: relative;
 }
 
-.navbar-dark .navbar-nav .nav-link:hover {
-  color: #ffffff;
+.navbar-dark .navbar-nav .nav-link::after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  background-color: #ffffff;
+  color: transparent;
+  width: 0%;
+  content: ".";
+  height: 3px;
+  transition: all 0.5s;
 }
+
+/* .navbar-dark .navbar-nav .nav-link:hover::after {
+  width: 100%;
+} */
+
+.navbar-dark .navbar-nav .nav-item .active::after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  background-color: #ffffff;
+  color: transparent;
+  width: 100%;
+  content: ".";
+  height: 3px;
+}
+
+/* .navbar-dark .navbar-nav .nav-link:hover {
+  color: #ffffff;
+}*/
 
 .navbar-dark .navbar-nav .active {
-  border-bottom: 3px solid rgb(226, 226, 226);
   background: #4a008f4d;
   padding: 0.5rem 1rem;
-}
+} 
 
 .add-shadow {
   background: rgb(105, 0, 204) !important;
@@ -159,7 +190,7 @@ h1 {
   color: rgb(207, 207, 207);
   font-size: 62px;
   z-index: 99;
-  text-shadow: rgba(256, 256, 256, 0.24) 0px 3px 8px;;
+  /* text-shadow: rgba(256, 256, 256, 0.24) 0px 3px 8px; */
 }
 
 #home {
@@ -236,7 +267,7 @@ h3 span {
 
 .card:hover {
   box-shadow: 8px 8px 16px 0 rgba(0,0,0,0.2);
-  transform: scale(1.01);
+  transform: scale(1.005);
 }
 
 .b-left {
@@ -260,7 +291,7 @@ h2, h3, h5 {
 
 .progress {
   height: 10px;
-  width: 80%;
+  width: 90%;
   background-color: #fff;
 }
 
@@ -275,11 +306,27 @@ h2, h3, h5 {
   margin-bottom: 5px;
 }
 
+.skill-item {
+  padding: 1rem 1rem 1rem 2rem;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.dark-mode .skill-item {
+  box-shadow: rgba(240, 240, 240, 0.24) 0px 3px 8px;
+}
+
+.skill-item:hover {
+  background-color: #6900cca8;
+  color: #f7f7f7;
+  cursor: pointer;
+}
+
 #skills, #contact {
   background: #f7f7f7;
 }
 
-#projects, #contact {
+#projects, #contact, #skills {
   height: auto;
 }
 
@@ -425,6 +472,8 @@ h2, h3, h5 {
 
 .card-body a i:hover {
   opacity: 1;
+  background-color: #464646;
+  color: #ffffff;
 }
 
 .btn-site {
@@ -710,4 +759,9 @@ h2, h3, h5 {
 
 #contact-div .contact-phone {
   border-color: rgba(153, 153, 153, 0.74);
+}
+
+.card:hover {
+  background-color: #6900cc !important;
+  color: #ffffff !important;
 }
