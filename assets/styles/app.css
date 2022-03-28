@@ -762,6 +762,6 @@ h2, h3, h5 {
 }
 
 .card:hover {
-  background-color: #6900cc !important;
+  background-color: #6900cc93 !important;
   color: #ffffff !important;
 }
