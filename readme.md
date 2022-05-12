@@ -1,7 +1,7 @@
 <h1 align="center">Hi 👋, I'm <a href="https://gauravrasal.me/">Gaurav Rasal</a></h1>
 - 👨‍💻 I'm currently studying computer engineering at PCCoE, Pune
 <br/>
-- 📫 Reach me at gauravvr77@gmail.com
+- 📫 Reach me at <a href="mailto:gauravvr77@gmail.com">gauravvr77@gmail.com</a>
 
 ## 🌐Socials
 
